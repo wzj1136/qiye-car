@@ -1,0 +1,485 @@
+/*
+* @Author: lenovo
+* @Date:   2018-08-23 22:55:58
+* @Last Modified by:   lenovo
+* @Last Modified time: 2018-09-06 18:21:17
+*/
+/* 公共样式，小小屏幕/col-xs <768px */
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 微软雅黑;
+}
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+nav{
+	width: 100%;
+	height: 90px;
+	background: #000000;
+	padding: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid #333333;
+	margin-bottom: 20px;
+}
+nav2{
+	width: 100%;
+	height: 90px;
+	background: #000000;
+	padding: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid #333333;
+	z-index: 100;
+	position: fixed;
+	left: 0;
+	top:-90px;
+	transition: all 0.5s;
+}
+nav2 .nav-logo{
+	width: 40%;
+	height: 100%;
+	padding-top: 5px;
+}
+nav2 .nav-logo img{
+	width: 188px;
+	height: 56px;
+	display: block;
+	margin: 0 auto;
+}
+nav2 .nav-right{
+	/* display: none; */
+	padding: 15px;
+}
+nav2 .nav-right button{
+	background: #0000;
+	color: #9F430E;
+	border: none;
+	margin-right: 50px;
+	outline: none;
+	position: relative;
+}
+/* 点击出现 */
+nav2 .nav-right button .inner{
+	width: 200px;
+	height: 0px;
+	/* background: yellow; */
+	position: absolute;
+	right: 0;
+	/* bottom: -225px; */
+	top: 60px;
+	left: -100px;
+	z-index: 10;
+	/* padding: 15px; */
+	overflow: hidden;
+}
+/* nav2 .nav-right button:focus .inner{
+	width: 200px;
+	height: 210px;
+	background: #000;
+	position: absolute;
+	right: 0;
+	z-index: 10;
+} */
+nav2 .nav-right a.one{
+	display:block;
+	color: #fff;
+	font-size: 15px;
+	padding: 10px 0;
+	border-bottom: 1px dotted  #FF6000;
+	background: #808080;
+}
+/* 点击出现结束 */
+nav2 .nav-right .icon-icon-bars{
+	font-size: 25px;
+}
+nav2 .nav-right a{
+	display: none;
+}
+nav2 .nav-right a:hover{
+	color: #FF6000;
+	text-decoration: none;
+}
+nav .nav-logo{
+	width: 40%;
+	height: 100%;
+	padding-top: 5px;
+}
+nav .nav-logo img{
+	width: 188px;
+	height: 56px;
+	display: block;
+	margin: 0 auto;
+}
+nav .nav-right{
+	/* display: none; */
+	padding: 15px;
+}
+nav .nav-right button{
+	background: #0000;
+	color: #9F430E;
+	border: none;
+	margin-right: 50px;
+	outline: none;
+}
+nav .nav-right .icon-icon-bars{
+	font-size: 25px;
+}
+nav .nav-right a{
+	display: none;
+}
+nav .nav-right a:hover{
+	color: #FF6000;
+	text-decoration: none;
+}
+/* //导航栏 */
+.banner{
+	width: 100%;
+	position: relative;
+	margin-bottom: 25px;
+}
+.banner img{
+	width: 100%;
+	display: block;
+}
+/* banner结束 */
+/* 关于我们开始 */
+.our{
+	width: 100%;
+}
+.our .container{
+	display: flex;
+	justify-content: space-between;
+}
+.our .our-solid{
+	width: 40%;
+	height:50%;
+	border-bottom: 1px solid #D6D6D6;
+	font-size: 30px;
+	color: #fff;
+}
+.our .our-center{
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	padding: 5px 0;
+}
+.our .our-center h4{
+	font-size: 25px;
+	margin-bottom: 0px;
+}
+.our .our-center p{
+	font-size: 15px;
+}
+/* news开始 */
+.news{
+	width: 100%;
+	margin-bottom: 70px;
+}
+.news .container{
+	height: 100%;
+	padding: 40px 15px 10px;
+	font-size: 15px;
+}
+.news .news-box{
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 0px 13px;
+	border-bottom: 1px dotted #C6C6C6;
+	color: black;
+}
+.news .news-box span{
+	color: #D6D9E2;
+	font-size: 12px;
+}
+.news a:hover{
+	text-decoration: none;
+}
+.news a .news-box:hover{
+	color:#F0443A;
+}
+.news a .news-box:hover span{
+	color:#F0443A;
+}
+/* 汽车介绍结束 */
+.bottom{
+	width: 100%;
+	background: #242424;
+	margin-bottom: 40px;
+}
+.bottom .container{
+	padding: 20px 0 0; 
+}
+.bottom .bottom-top{
+	display: none;
+}
+.bottom .bottom-bot{
+	width: 100%;
+}
+.bottom .bottom-bot .last-top{
+	/* width: 40%; */
+	height: 32px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+
+}
+.bottom .bottom-bot .last-top .top-first{
+	width:32px;
+	height: 32px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 32px;
+	margin-left: 5px;
+}
+.bottom .bottom-bot .last-top .top-first a{
+	text-decoration: none;
+}
+.bottom .top-first .iconfont{
+	/* display: block; */
+	font-size: 25px;
+	color: #fff;
+}
+.bottom .top-first .iconfont:hover{
+	/* display: block; */
+	color: #FF6000;
+}
+.bottom .top-first .icon-youjian{
+	font-size: 15px;
+}
+.bottom .top-first .icon-dianhua{
+	font-size: 20px;
+}
+.bottom .bottom-bot .last-bot{
+	font-size: 12px;
+	color: #C6C6C6;
+	text-align: center;
+}
+/* 底部结束 */
+.last{
+	width: 100%;
+	background: #F0443A;
+	/* height: 20px;	 */
+	text-align: center;
+	padding: 10px 0;
+	position: fixed;
+	bottom: 0;
+}
+.last a{
+	color: #fff;
+	font-size: 15px;
+}
+.last a:hover{
+	color: #000;
+	text-decoration: none;
+}
+/* 小屏幕  col-sm- >768px*/
+@media screen and (min-width:768px){
+.news .container{
+	padding: 30px 15px 10px;
+	font-size: 15px;
+}
+.news .news-box{
+	padding: 5px 0px 5px;
+	font-size: 13px;
+}
+}
+/* 大于992px 中等屏幕col-md- */
+@media screen and (min-width: 992px) {
+/* .container {
+    width: 1170px;
+} */
+nav{
+	width: 100%;
+	height: 90px;
+	background: #000000;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid #333333;
+}
+nav .nav-logo{
+	width: 40%;
+	height: 100%;
+	padding-top: 5px;
+}
+nav .nav-logo img{
+	width: 188px;
+	height: 56px;
+	display: block;
+	margin: 0 auto;
+}
+nav .nav-right{
+	width: 60%;
+	height: 100%;
+	background: #000000;
+	padding-top: 20px;
+	display: block;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+nav .nav-right a{
+	font-size: 15px;
+	color: #777777;
+	margin-left: 30px;
+	display: inline;
+}
+nav .nav-right a:nth-child(6){
+	color: #FF6000;
+}
+nav .nav-right a:hover{
+	color: #FF6000;
+	text-decoration: none;
+}
+.banner{
+	width: 100%;
+	height: 270px;
+	position: relative;
+}
+.banner .container{
+	width: 1050px;
+}
+.banner img{
+	width: 100%;
+	height: 270px;
+}	
+nav .nav-right button{
+	display: none;
+}
+.our .our-center h4{
+	font-size: 30px;
+	margin-bottom: 0px;
+}
+.our .our-center p{
+	font-size: 15px;
+}
+.news .container{
+	padding: 30px 15px 10px;
+}
+.news .news-box{
+	padding: 8px 0px 13px;
+	font-size: 13px;
+}
+.news .news-box span{
+	color: #D6D9E2;
+	font-size: 12px;
+}
+.news a:hover{
+	text-decoration: none;
+}
+.news a .news-box:hover{
+	color:#F0443A;
+}
+.news a .news-box:hover span{
+	color:#F0443A;
+}
+.sever .container{
+	width: 1000px;
+}
+.bottom{
+	width: 100%;
+	background: #242424;
+	margin-bottom: 0;
+}
+.bottom .container{
+	width: 1000px;
+	height: 100%;
+	padding: 40px 0 0; 
+}
+.bottom .bottom-top{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.bottom dl{
+	width: 33%;
+	background: #242424;
+}
+.bottom dl dt{
+	font-size:15px;
+	color: #FF6000;
+	margin-bottom: 25px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.bottom dl dt:nth-child(4){
+	margin-bottom: 5px;
+	color: #D3D3D3;
+}
+.bottom dl dd{
+	font-size: 12px;
+	color: #696969;
+	margin-bottom: 5px;
+}
+.bottom dl dd:nth-child(3){
+	font-size: 12px;
+	color: #696969;
+	margin-bottom: 30px;
+}
+.bottom dl dd span{
+	color: #FF6000;
+	font-weight: bold;
+	font-size: 13px;
+}
+.bottom .bottom-bot{
+	width: 100%;
+	padding: 20px 0;
+}
+.bottom .bottom-bot .last-top{
+	width: 30%;
+	height: 32px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 10px;
+}
+.bottom .bottom-bot .last-top .top-first{
+	width:32px;
+	height: 32px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 32px;
+}
+.bottom .top-first .iconfont{
+	/* display: block; */
+	font-size: 25px;
+	color: #fff;
+}
+.bottom .top-first .icon-youjian{
+	font-size: 15px;
+}
+.bottom .top-first .icon-dianhua{
+	font-size: 20px;
+}
+.bottom .bottom-bot .last-bot{
+	font-size: 12px;
+	color: #C6C6C6;
+	text-align: center;
+}
+.last{
+	display: none;
+}
+}
+/* 大于1220px 大屏幕col-lg- */
+@media screen and (min-width: 1220px) {
+.our .container{
+	width: 1050px;
+}
+.news .container{
+	padding: 40px 95px 10px;
+	font-size: 15px;
+}
+}

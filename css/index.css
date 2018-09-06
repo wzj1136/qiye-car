@@ -1,0 +1,744 @@
+/*
+* @Author: lenovo
+* @Date:   2018-08-23 22:55:58
+* @Last Modified by:   lenovo
+* @Last Modified time: 2018-09-06 18:10:33
+*/
+/* 公共样式，小小屏幕/col-xs <768px */
+*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		box-sizing: border-box;
+		font-family: 微软雅黑;
+}
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+nav{
+	width: 100%;
+	height: 90px;
+	background: #000000;
+	padding: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid #333333;
+	z-index: 100;
+}
+nav2{
+	width: 100%;
+	height: 90px;
+	background: #000000;
+	padding: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid #333333;
+	z-index: 100;
+	position: fixed;
+	left: 0;
+	top:-90px;
+	transition: all 0.5s;
+}
+nav2 .nav-logo{
+	width: 40%;
+	height: 100%;
+	padding-top: 5px;
+}
+nav2 .nav-logo img{
+	width: 188px;
+	height: 56px;
+	display: block;
+	margin: 0 auto;
+}
+nav2 .nav-right{
+	/* display: none; */
+	padding: 15px;
+}
+nav2 .nav-right button{
+	background: #0000;
+	color: #9F430E;
+	border: none;
+	margin-right: 50px;
+	outline: none;
+	position: relative;
+}
+/* 点击出现 */
+nav2 .nav-right button .inner{
+	width: 200px;
+	height: 0px;
+	/* background: yellow; */
+	position: absolute;
+	right: 0;
+	/* bottom: -225px; */
+	top: 60px;
+	left: -100px;
+	z-index: 10;
+	/* padding: 15px; */
+	overflow: hidden;
+}
+/* nav2 .nav-right button:focus .inner{
+	width: 200px;
+	height: 210px;
+	background: #000;
+	position: absolute;
+	right: 0;
+	z-index: 10;
+} */
+nav2 .nav-right a.one{
+	display:block;
+	color: #fff;
+	font-size: 15px;
+	padding: 10px 0;
+	border-bottom: 1px dotted  #FF6000;
+	background: #808080;
+}
+/* 点击出现结束 */
+nav2 .nav-right .icon-icon-bars{
+	font-size: 25px;
+}
+nav2 .nav-right a{
+	display: none;
+}
+nav2 .nav-right a:hover{
+	color: #FF6000;
+	text-decoration: none;
+}
+nav .nav-logo{
+	width: 40%;
+	height: 100%;
+	padding-top: 5px;
+}
+nav .nav-logo img{
+	width: 188px;
+	height: 56px;
+	display: block;
+	margin: 0 auto;
+}
+nav .nav-right{
+	/* display: none; */
+	padding: 15px;
+}
+nav .nav-right button{
+	background: #0000;
+	color: #9F430E;
+	border: none;
+	margin-right: 50px;
+	outline: none;
+	position: relative;
+}
+/* 点击出现 */
+nav .nav-right button .inner{
+	width: 200px;
+	height: 0px;
+	/* background: yellow; */
+	position: absolute;
+	right: 0;
+	bottom: -225px;
+	z-index: 10;
+	/* padding: 15px; */
+	overflow: hidden;
+	left: -100px;
+}
+nav .nav-right button:focus .inner{
+	width: 200px;
+	height: 210px;
+	background: #000;
+	position: absolute;
+	right: 0;
+	z-index: 10;
+	/* padding: 15px; */
+}
+nav .nav-right a.one{
+	display:block;
+	color: #fff;
+	font-size: 15px;
+	padding: 10px 0;
+	border-bottom: 1px dotted  #FF6000;
+}
+/* 点击出现结束 */
+nav .nav-right .icon-icon-bars{
+	font-size: 25px;
+}
+nav .nav-right a{
+	display: none;
+}
+nav .nav-right a:hover{
+	color: #FF6000;
+	text-decoration: none;
+}
+/* //导航栏 */
+.banner{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	cursor: pointer;
+}
+.banner img{
+	width: 100%;
+	display: block;
+}
+.banner img:nth-child(2){
+	width: 100%;
+	display: none;
+}
+.banner .ban-left{
+	display: none;
+}
+.banner .ban-right{
+	display: none;
+}
+.banner .swiper-pagination{
+	display: none;
+}
+/* banner结束 */
+.adv{
+	width: 100%;
+	/* height: 185px; */
+	/* overflow: hidden; */
+	padding: 15px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.adv h1{
+	font-size: 26px;
+	color: #3E3E3E;
+	margin-bottom: 15px;
+}
+.adv span{
+	font-size: 15px;
+	color: #808080;
+}
+.adv img{
+	width: 100%;
+	/* margin-bottom: 30px; */
+}
+/* 服务介绍 */
+.sever{
+	width: 100%;
+}
+.sever .container{
+	height: 100%;
+}
+.sever .container ul li{
+	padding: 30px;
+}
+.sever .container ul li img{
+	width: 128px;
+	height: 128px;
+	display: block;
+	margin: 0 auto ;
+	margin-bottom: 20px;
+}
+.sever .container ul li h4{
+	display: block;
+	text-align: center;
+	position: relative;
+	margin-bottom: 30px;
+	color: #FF6000;
+}
+.sever .container ul li h4:after{
+	content: "";
+	display: block;
+	width: 70px;
+	height: 2px;
+	background: #BCBCBC;
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	top: 30px;
+}
+/* 公司简介 */
+.troduce{
+	width: 100%;
+}
+/* .troduce .container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+} */
+.troduce .tro-left{
+	width: 100%;
+	padding: 10px 50px 0;
+}
+.troduce img{
+	width: 100%;
+	height: 100%;
+}
+.troduce .tro-right{
+	width: 100%;
+	padding: 0 50px;
+}
+.troduce .tro-right .tro-rig-top{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid #EFEFEF;
+	text-align: center;
+	overflow: hidden;
+}
+.troduce .tro-right .tro-rig-top a h4{
+	font-size: 18px;
+	color: #FF6000;
+}
+.troduce .tro-right .tro-rig-top a:nth-child(2) h4{
+	margin-top: 12px;
+	font-size: 12px;
+	color: #FF6000;
+}
+.troduce .tro-right .tro-rig-top a:hover{
+	text-decoration: none;
+}
+.troduce .tro-right .tro-rig-bot{
+	padding: 10px 0px;
+}
+.troduce .tro-right .tro-rig-bot p{
+	font-size: 15px;
+	line-height: 28px;
+}
+.troduce .tro-right .tro-rig-bot a{
+	font-size: 14px;
+	display: block;
+	border-bottom: 1px dotted #C1C1C1;
+	padding: 6px 0;
+	color: #808080;
+	display: flex;
+	justify-content: space-between;
+}
+.troduce .tro-right .tro-rig-bot a:hover{
+	color: #FF7900;
+	text-decoration: none;
+}
+.troduce .tro-right .tro-rig-bot a:hover span{
+	color: #FF7900;
+	text-decoration: none;
+}
+.troduce .tro-right .tro-rig-bot span{
+	font-size: 12px;
+	color: #808080;
+}
+/* 汽车介绍结束 */
+.bottom{
+	width: 100%;
+	background: #242424;
+	margin-bottom: 40px;
+}
+.bottom .container{
+	padding: 20px 0 0; 
+}
+.bottom .bottom-top{
+	display: none;
+}
+.bottom .bottom-bot{
+	width: 100%;
+}
+.bottom .bottom-bot .last-top{
+	/* width: 50%; */
+	height: 32px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+
+}
+.bottom .bottom-bot .last-top .top-first{
+	width:32px;
+	height: 32px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 32px;
+	margin-left: 5px;
+}
+.bottom .bottom-bot .last-top .top-first a{
+	text-decoration: none;
+}
+.bottom .top-first .iconfont{
+	/* display: block; */
+	font-size: 25px;
+	color: #fff;
+}
+.bottom .top-first .iconfont:hover{
+	/* display: block; */
+	color: #FF6000;
+}
+.bottom .top-first .icon-youjian{
+	font-size: 15px;
+}
+.bottom .top-first .icon-dianhua{
+	font-size: 20px;
+}
+.bottom .bottom-bot .last-bot{
+	font-size: 12px;
+	color: #C6C6C6;
+	text-align: center;
+}
+/* 底部结束 */
+.last{
+	width: 100%;
+	background: #F0443A;
+	/* height: 20px;	 */
+	text-align: center;
+	padding: 10px 0;
+	position: fixed;
+	bottom: 0;
+}
+.last a{
+	color: #fff;
+	font-size: 15px;
+}
+.last a:hover{
+	color: #000;
+	text-decoration: none;
+}
+/* 小屏幕  col-sm- >768px*/
+@media screen and (min-width:768px){
+.banner{
+	width:100%;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+.banner img.beijin0{
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left:0;
+}
+.banner .ban-left{
+	display: block;
+	width: 28px;
+	height: 22px;
+	position: absolute;
+	top: 200px;
+	left: 20px;
+	background-image: url('../img/large_left.png');
+	background-position: 0 0;
+	cursor: pointer;
+}
+.banner .ban-right{
+	display: block;
+	width: 28px;
+	height: 22px;
+	position: absolute;
+	top: 200px;
+	right: 20px;
+	background-image: url('../img/large_right.png');
+	background-position: 0 0;
+	cursor: pointer;
+}	
+/* .banner .swiper-pagination{
+	display: block;
+	top: 75%;
+} */	
+.banner .dot{
+	width: 110px;
+	height: 6px;
+	position: absolute;
+	top: 300px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.banner  .dot-one{
+	width: 50px;
+	height: 6px;
+	background: #fff;
+	cursor: pointer;
+}
+.banner .color{
+	width: 50px;
+	height: 100%;
+	background: #FF6000;
+}
+/* banner结束 */
+.adv{
+	width: 100%;
+	height: 155px;	
+}
+.adv h1{
+	font-size: 36px;
+}
+.adv span{
+	font-size: 16px;
+}
+}
+/* 大于992px 中等屏幕col-md- */
+@media screen and (min-width: 992px) {
+/* .container {
+    width: 1170px;
+} */
+.banner{
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+.banner img.beijin0{
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.banner .dot{
+	width: 110px;
+	height: 6px;
+	position: absolute;
+	top: 400px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+nav{
+	width: 100%;
+	height: 90px;
+	background: #000000;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid #333333;
+}
+nav .nav-logo{
+	width: 40%;
+	height: 100%;
+	padding-top: 5px;
+}
+nav .nav-logo img{
+	width: 188px;
+	height: 56px;
+	display: block;
+	margin: 0 auto;
+}
+nav .nav-right{
+	width: 60%;
+	height: 100%;
+	background: #000000;
+	padding-top: 20px;
+	display: block;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+nav .nav-right a{
+	font-size: 15px;
+	color: #777777;
+	margin-left: 30px;
+	display: inline;
+}
+nav .nav-right a:nth-child(2){
+	color: #FF6000;
+}
+nav .nav-right a:hover{
+	color: #FF6000;
+	text-decoration: none;
+}
+/* .banner{
+	width: 100%;
+	height: 570px;
+	position: relative;
+}
+.banner img{
+	width: 100%;
+	height: 570px;
+} */
+.banner .ban-left{
+	top: 200px;
+}
+.banner .ban-right{
+	top: 200px;
+}		
+nav .nav-right button{
+	display: none;
+}
+.sever .container{
+	width: 1000px;
+}
+.adv{
+	margin-bottom: 10px;
+	padding: 0;
+	height: 100%;
+}
+.adv .container{
+	width: 1000px;
+}
+.troduce{
+	width: 100%;
+	margin-bottom: 50px;
+}
+.troduce .container{
+	width: 1050px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.troduce .tro-left{
+	width: 30%;
+	height: 240px;
+	padding: 20px 10px 0  30px;
+}
+.troduce .tro-left:nth-child(2){
+	padding: 20px 10px 0  20px;
+}
+.troduce img{
+	width: 100%;
+	height: 100%;
+}
+.troduce .tro-right{
+	width: 70%;
+	/* margin-left: 0px; */
+	padding: 0 30px;
+}
+.troduce .tro-right .tro-rig-top{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid #EFEFEF;
+	text-align: center;
+	overflow: hidden;
+}
+.troduce .tro-right .tro-rig-top a h4{
+	font-size: 18px;
+	color: #FF6000;
+}
+.troduce .tro-right .tro-rig-top a:nth-child(2) h4{
+	margin-top: 12px;
+	font-size: 12px;
+	color: #FF6000;
+}
+.troduce .tro-right .tro-rig-top a:hover{
+	text-decoration: none;
+}
+.troduce .tro-right .tro-rig-bot{
+	padding: 10px 0px;
+}
+.troduce .tro-right .tro-rig-bot p{
+	font-size: 15px;
+	line-height: 25px;
+}
+.bottom{
+	width: 100%;
+	background: #242424;
+	margin-bottom: 0;
+}
+.bottom .container{
+	width: 1000px;
+	height: 100%;
+	padding: 40px 0 0; 
+}
+.bottom .bottom-top{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.bottom dl{
+	width: 33%;
+	background: #242424;
+}
+.bottom dl dt{
+	font-size:15px;
+	color: #FF6000;
+	margin-bottom: 25px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.bottom dl dt:nth-child(4){
+	margin-bottom: 5px;
+	color: #D3D3D3;
+}
+.bottom dl dd{
+	font-size: 12px;
+	color: #696969;
+	margin-bottom: 5px;
+}
+.bottom dl dd:nth-child(3){
+	font-size: 12px;
+	color: #696969;
+	margin-bottom: 30px;
+}
+.bottom dl dd span{
+	color: #FF6000;
+	font-weight: bold;
+	font-size: 13px;
+}
+.bottom .bottom-bot{
+	width: 100%;
+	padding: 20px 0;
+}
+.bottom .bottom-bot .last-top{
+	width: 30%;
+	height: 32px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 10px;
+}
+.bottom .bottom-bot .last-top .top-first{
+	width:32px;
+	height: 32px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 32px;
+}
+.bottom .top-first .iconfont{
+	/* display: block; */
+	font-size: 25px;
+	color: #fff;
+}
+.bottom .top-first .icon-youjian{
+	font-size: 15px;
+}
+.bottom .top-first .icon-dianhua{
+	font-size: 20px;
+}
+.bottom .bottom-bot .last-bot{
+	font-size: 12px;
+	color: #C6C6C6;
+	text-align: center;
+}
+.last{
+	display: none;
+}
+}
+/* 大于1220px 大屏幕col-lg- */
+@media screen and (min-width: 1220px) {
+	.banner{
+	height: 562px;
+	position: relative;
+	overflow: hidden;
+}
+.banner img.beijin0{
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.banner .dot{
+	width: 110px;
+	height: 6px;
+	position: absolute;
+	top: 450px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+}
