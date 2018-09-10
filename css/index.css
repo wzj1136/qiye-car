@@ -2,7 +2,7 @@
 * @Author: lenovo
 * @Date:   2018-08-23 22:55:58
 * @Last Modified by:   lenovo
-* @Last Modified time: 2018-09-06 18:10:33
+* @Last Modified time: 2018-09-09 21:11:54
 */
 /* 公共样式，小小屏幕/col-xs <768px */
 *{
@@ -173,28 +173,29 @@ nav .nav-right a:hover{
 }
 /* //导航栏 */
 .banner{
-	height: 100%;
+	height: auto;
 	width: 100%;
 	position: relative;
 	cursor: pointer;
 }
 .banner img{
+	height: auto;
 	width: 100%;
 	display: block;
 }
-.banner img:nth-child(2){
-	width: 100%;
-	display: none;
-}
+/*.banner img:nth-child(2){*/
+	/*width: 100%;*/
+	/*display: none;*/
+/*}*/
 .banner .ban-left{
 	display: none;
 }
 .banner .ban-right{
 	display: none;
 }
-.banner .swiper-pagination{
-	display: none;
-}
+/*.banner .swiper-pagination{*/
+	/*display: none;*/
+/*}*/
 /* banner结束 */
 .adv{
 	width: 100%;
@@ -223,6 +224,9 @@ nav .nav-right a:hover{
 }
 .sever .container{
 	height: 100%;
+}
+.sever .container ul.row{
+	display: none;
 }
 .sever .container ul li{
 	padding: 30px;
@@ -265,10 +269,14 @@ nav .nav-right a:hover{
 .troduce .tro-left{
 	width: 100%;
 	padding: 10px 50px 0;
+	/*opacity: 0;*/
 }
 .troduce img{
 	width: 100%;
 	height: 100%;
+}
+.troduce .tro-left .pic{
+	opacity: 0;
 }
 .troduce .tro-right{
 	width: 100%;
@@ -401,16 +409,16 @@ nav .nav-right a:hover{
 @media screen and (min-width:768px){
 .banner{
 	width:100%;
-	height: 400px;
+	/*height: 400px;*/
 	position: relative;
 	overflow: hidden;
 }
 .banner img.beijin0{
 	width: 100%;
 	display: block;
-	position: absolute;
-	top: 0;
-	left:0;
+	/*position: absolute;*/
+	/*top: 0;*/
+	/*left:0;*/
 }
 .banner .ban-left{
 	display: block;
@@ -478,18 +486,12 @@ nav .nav-right a:hover{
 /* .container {
     width: 1170px;
 } */
-.banner{
-	height: 500px;
-	position: relative;
-	overflow: hidden;
-}
-.banner img.beijin0{
-	width: 100%;
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
+/*.banner{*/
+	/*!*height: 500px;*!*/
+	/*position: relative;*/
+	/*overflow: hidden;*/
+/*}*/
+
 .banner .dot{
 	width: 110px;
 	height: 6px;
@@ -717,18 +719,13 @@ nav .nav-right button{
 }
 /* 大于1220px 大屏幕col-lg- */
 @media screen and (min-width: 1220px) {
-	.banner{
-	height: 562px;
-	position: relative;
-	overflow: hidden;
-}
-.banner img.beijin0{
-	width: 100%;
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
+	/*.banner{*/
+	/*!*height: 562px;*!*/
+	/*height: auto;*/
+	/*position: relative;*/
+	/*!*overflow: hidden;*!*/
+/*}*/
+
 .banner .dot{
 	width: 110px;
 	height: 6px;

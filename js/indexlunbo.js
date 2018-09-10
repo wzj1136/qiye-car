@@ -2,7 +2,7 @@
 * @Author: lenovo
 * @Date:   2018-09-01 15:54:36
 * @Last Modified by:   lenovo
-* @Last Modified time: 2018-09-01 15:54:53
+* @Last Modified time: 2018-09-09 21:07:11
 */
     window.onload=function(){
     // let imgs=document.querySelectorAll(".beijin0");
@@ -39,7 +39,6 @@
     //         next=imgs.length-1;
     //     }
     //     imgs[next].style.left=-widths+"px";
-    //     // console.log(imgs[now],imgs[next],widths);
     //     animate(imgs[now],{left:widths});
     //     animate(imgs[next],{left:0},function () {
     //         flag=true;
@@ -109,7 +108,14 @@
 
 
 //获取页面开始滚动时的距离
-    window.onscroll=function(){
+        // 浏览器窗口的距离+滚动的距离>楼层距顶部的距离
+        //获取浏览器的高度
+        let wh=window.innerHeight;
+
+
+        window.onscroll=function(){
+
+        // 上导航
         let bh=document.body.scrollTop||document.documentElement.scrollTop;
         let nav=document.querySelector("nav2");
         if(bh>300){
@@ -117,6 +123,28 @@
         }else{
             nav.style.top="-90px";
         }
+
+
+        // 显示内容
+        let sever=document.querySelector(".row");
+        let arrr=[];
+        arrr.push(sever.offsetTop);
+        if (wh+bh>arrr+800){
+            sever.style.display="block";
+        }
+
+        // 图片显示
+        let pic=document.querySelectorAll(".pic");
+        let arr=[];
+        for (let i=0;i<pic.length;i++){
+            arr.push(pic[i].offsetTop);
+        }
+        for (let i=0;i<arr.length;i++){
+            if (wh+bh>arr[i]+300){
+                pic[i].style.opacity=1;
+            }
+        }
+            
     }
 
     let button=document.querySelector(".button1");
