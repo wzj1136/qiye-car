@@ -226,7 +226,8 @@ nav .nav-right a:hover{
 	height: 100%;
 }
 .sever .container ul.row{
-	display: none;
+	opacity: 0;
+	transition: all 0.5s;
 }
 .sever .container ul li{
 	padding: 30px;
@@ -277,6 +278,7 @@ nav .nav-right a:hover{
 }
 .troduce .tro-left .pic{
 	opacity: 0;
+	transition: all 0.5s;
 }
 .troduce .tro-right{
 	width: 100%;

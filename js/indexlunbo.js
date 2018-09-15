@@ -127,10 +127,10 @@
 
         // 显示内容
         let sever=document.querySelector(".row");
-        let arrr=[];
-        arrr.push(sever.offsetTop);
-        if (wh+bh>arrr+800){
-            sever.style.display="block";
+        // let arrr=[];
+        // arrr.push(sever.offsetTop);
+        if (wh+bh>sever.offsetTop+300){
+            sever.style.opacity="1";
         }
 
         // 图片显示
